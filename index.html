@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf2f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #123456;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        nav {
+            background-color: #2874a6;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        .container {
+            width: 85%;
+            margin: 25px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            border-left: 6px solid #2874a6;
+        }
+
+        h2 {
+            color: #123456;
+            border-bottom: 2px solid #2874a6;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #2874a6;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        footer {
+            background-color: #123456;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MY PERSONAL PORTFOLIO</h1>
+        <p>First Year BSIT Student</p>
+    </header>
+
+    <nav>
+        <a href="#personal">Home</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#java">Java Code</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="personal">
+            <h2>Personal Information</h2>
+            <h3>Hello! I am Raven</h3>
+
+            <p>I am a first-year Information Technology student. I am interested in learning more about computers, programming, and web development.</p>
+
+            <p><b>Full Name:</b> Raven P. Pagaduan</p>
+            <p><b>Address:</b> Caballero, Guimba, Nueva Ecija</p>
+            <p><b>Email:</b> ravenpagaduan4@gmail.com</p>
+            <p><b>Contact Number:</b> 09276334704</p>
+        </section>
+
+        <section id="education">
+            <h2>Educational Background</h2>
+
+            <h3>College</h3>
+            <p>OUR LADY OF SACRED HEART COLLEGE OF GUIMBA, INC..</p>
+            <p>Course: Bachelor of Science in Information Technology</p>
+            <p>Year Level: First Year</p>
+
+            <h3>Senior High School</h3>
+            <p>Triala National High School</p>
+            <p>Strand: TVL-ICT</p>
+
+            <h3>Junior High School</h3>
+            <p>Triala National High School</p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <ul>
+                <li>Basic HTML</li>
+                <li>Basic CSS</li>
+                <li>Basic Java Programming</li>
+                <li>Problem-solving</li>
+                <li>Willingness to learn</li>
+            </ul>
+        </section>
+
+        <section id="java">
+            <h2>Java Code</h2>
+            <p>My sample Java number guessing game.</p>
+            <p><b>Programming Language:</b> Java</p>
+            <p><b>Program:</b> Number Guessing Game</p>
+            <pre><code>
+import java.util.Scanner;
+
+public class RavenGame {
+    public static void main(String[] args) {
+
+        Scanner Ven = new Scanner(System.in);
+
+        int r = 7;
+        int a = 0;
+        int v = 0;
+        int e = 5;
+        int n = e;
+
+        System.out.println("==============================");
+        System.out.println("     NUMBER GUESSING GAME");
+        System.out.println("==============================");
+
+        System.out.println("Guess the number from 1 to 10.");
+        System.out.println("You have 5 tries.");
+
+        while (n > 0 && a != r) {
+
+            System.out.print("\nEnter your guess: ");
+            a = Ven.nextInt();
+
+            v = v + 1;
+            n = n - 1;
+
+            if (a == r) {
+                System.out.println("Correct! You win!");
+            }
+            else if (a < r) {
+                System.out.println("Too low. Try again.");
+            }
+            else {
+                System.out.println("Too high. Try again.");
+            }
+
+            System.out.println("Tries left: " + n);
+        }
+
+        if (a != r) {
+            System.out.println("Game over!");
+            System.out.println("The secret number was " + r);
+        }
+
+        System.out.println("Number of tries used: " + v);
+
+       
+    }
+}
+</code></pre>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>My Personal Portfolio | BSIT Student</p>
+        <p>Thank you for visiting my portfolio!</p>
+    </footer>
+
+</body>
+</html>
